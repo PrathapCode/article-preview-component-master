@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Manrope:wght@500;700&display=swap')
+
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%)
+$DesaturatedDarkBlue: hsl(214, 17%, 51%)
+$GrayishBlue: hsl(212, 23%, 69%)
+$LightGrayishBlue: hsl(210, 46%, 95%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Manrope', sans-serif
+    background-color: $LightGrayishBlue
+
+.content
+    display: flex
+    align-items: center
+    height: 300px
+    width: 55%
+    background-color: #fff
+    margin: 250px 0 0 300px
+    border-radius: 10px 10px 10px 10px
+
+.left
+    img
+        width: 300px
+        margin: 4px 0 0 0 
+        border-radius: 10px 0 0 10px
+        height: 300px
+        
+.right
+    padding: 50px
+
+    h2
+        color: $VeryDarkGrayishBlue
+        margin-bottom: 20px
+        font-size: 21px
+        
+
+    p
+        color: $DesaturatedDarkBlue
+        font-size: 14px
+        line-height: 22px
+        margin-bottom: 20px
+
+.profile
+    display: flex
+    margin-bottom: -20px
+
+.face
+    height: 45px
+    width: 45px
+    border-radius: 100px
+    margin-right: 20px
+
+.about
+    h4
+        font-size: 15px
+        color: $VeryDarkGrayishBlue
+
+#direction
+    width: 40px
+    height: 40px
+    background-color: $LightGrayishBlue
+    padding: 10px
+    border-radius: 50px
+    margin-left: 155px
+    margin-top: 10px
+
+#arrow
+    margin-left: 3px
+
+#share
+    margin: -164px 0 0 888px
+    position: absolute
+    border-radius: 15px
+    display: flex
+    background-color: $VeryDarkGrayishBlue
+    width: 290px
+    padding: 22px 0
+    visibility: hidden
+    p
+        margin-left: 40px
+        color: $GrayishBlue
+        letter-spacing: 8px
+        font-size: 14px
+    img
+        margin-left: 19px
+
+.phoneshare
+    visibility: hidden
+    position: absolute
+
+.empty
+    width: 0
+    position: absolute
+    margin-left: 40%
+    margin-top: 13%
+    border-left: 16px solid transparent
+    border-right: 20px solid transparent
+    border-top: 20px solid $VeryDarkGrayishBlue
+
+@media screen and (max-width:426px)
+
+    .content 
+        display: block
+        height: 635px
+        width: 87%
+        background-color: #fff
+        margin: 100px 0px 0 30px
+        border-radius: 10px 10px 10px 10px
+
+
+    #share
+        margin: -68px 0px 0 30px
+        position: absolute
+        border-radius: 0 0 15px 15px
+        width: 370px
+        height: 68px
+        padding: 22px 0
+        display: non
+        p
+            letter-spacing: 8px
+            font-size: 14px
+
+    .empty
+        display: none
+
+    .left
+        img
+            width: 370px
+            margin: 0
+            object-fit: cover
+            object-position: 0% 0%
+            border-radius: 10px 10px 0 0px
+            height: 240px    
+
+    .right
+        h2
+            margin-right: -5px
+            margin-bottom: 23px
+            font-size: 17px
+        p
+            letter-spacing: normal
+            padding: 0 7px 0 0
+            line-height: 30px
+            font-size: 14px
+            margin-right: -15px
+            margin-bottom: 25px
+
+    #direction
+        position: absolute
+        margin-left: 250px
+        z-index: 100
+        margin-top: 21px
+        width: 35px
+        height: 35px
+
+    #arrow
+        margin-left: -0px
+        margin-bottom: 3px
+
+    .face
+        height: 40px
+        width: 40px
+        margin-top: 15px
+
+
+    .about
+        margin-top: 19px
+        line-height: 10px
+        h4
+            font-size: 15px
+
+            
